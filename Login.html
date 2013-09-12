@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+
+<html ng-app>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  
+  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+  
+  <!-- Extra Codiqa features -->
+  <link rel="stylesheet" href="codiqa.ext.css">
+  
+  <!-- jQuery and jQuery Mobile -->
+  
+  
+  <style type="text/css"> 
+  
+  matric{
+	  
+	 text-transform:uppercase;  
+	  
+	  }
+  
+  
+  </style>
+  
+  <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+  
+  <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    
+        <script src="angular.min.js"></script>
+ 
+           <script src=" ConvertirMayuscula.js"></script> 
+
+  <script  src="login2.js"></script>
+
+   
+ <script src="Calendariojs.js"></script> 
+
+ <script src="Hora.js"></script> 
+ 
+ <script>
+ 
+$(document).ready(function(){
+    
+    
+     $("#matric").keypress(function(){
+        
+        this.value=formLogin.matric.value.toUpperCase();
+         
+          // alert(formLogin.matric.value);
+             
+         });
+    
+    
+    }); 
+ 
+ 
+ </script>
+
+</head>
+<body>
+<script>
+
+
+</script>
+
+
+
+<!-- Home -->
+<!-- http://librosweb.es/ajax/capitulo_7/la_primera_aplicacion.html -->
+
+<div data-role="page" id="page1">
+    <div data-theme="b" data-role="header">
+        <h4>
+            O&amp;M@s
+            <div ng-controller="Hora" id="hora">
+              
+            
+         <!--   {{hora}}{{pm}}  -->
+              
+            </div>
+           
+ <div id="div">
+          
+            </div> 
+           
+           
+       </h4>
+    </div>
+    <div data-role="content">
+        <div style="">
+           <center><img style="width: 288px; height: 100px" src="http://www.udoym.edu.do/logolemaoym.png"></center>
+        
+        </div>
+           <div id="fecha" align="right">
+           
+            </div>
+    
+	     <div ng-controller="Hora" align="right" style="display:none";>
+         
+             {{al}} 
+          
+         
+         </div>
+         
+         
+		 <form id="formLogin" method="post" name="formLogin"><!-- action="http://goo" onSubmit="return validar (this)"-->
+         
+        <div data-role="fieldcontain">
+
+            <label for="textinput1">
+                Usuario
+            </label>
+            <input name="matric"  type="text" required id="matric" placeholder="Usuario" maxlength="13" onblur="Convert(this.value)" onkeypress=" Mayuscula(this)">
+           
+        </div>
+        <div data-role="fieldcontain">
+            <label for="textinput3">
+            
+                Clave
+                
+            </label>
+            <input name="contra"  type="password"  id="contra" placeholder="Clave" required>
+        </div>
+         <!--<input  name="boton" type="submit" data-theme="b" data-icon="star" data-iconpos="left"
+        
+        value="Aceptar" id="boton" >-->
+        
+        
+       <!--  <input  name="btnLogin" type="button"  id="btnLogin" onClick="Login()">-->
+       
+<center><img src="ajax-loader.gif"  id="magen" style="display:none;" width="50"></img></center>
+        
+        
+     <a data-role="button" data-theme="b" data-icon="star" href=""name="btnLogin" type="button"  id="btnLogin" onClick="Login();">
+           Iniciar Sesion
+        </a>
+
+<center><div onClick="Pass()" id="cont">Olvidaste tu contraseña</div></center>
+
+	   </form>
+        
+         
+        <a data-role="button" data-theme="b" data-icon="home" href="index.html" id="principal">
+            Principal
+        </a>
+		
+		<a data-role="button" data-theme="b" data-icon="plus" href="">
+            Crear Cuenta
+        </a>
+	
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

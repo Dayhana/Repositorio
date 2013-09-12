@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Splashscreen Example</title>
+
+    <script type="text/javascript" charset="utf-8" src="cordova-x.x.x.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+	$(document).ready(function(e) {
+        
+    
+    //
+    function onDeviceReady() {
+        navigator.splashscreen.show();
+    }
+       });
+    </script>
+  </head>
+  <body>
+    <h1>Example</h1>
+  </body>
+</html>

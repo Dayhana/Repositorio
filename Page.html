@@ -1,0 +1,49 @@
+﻿ <html ng-app>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  
+                
+  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css"> 
+<!-- jQuery and jQuery Mobile -->
+  
+  <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+  
+  <script src=" http://code.jquery.com/jquery-1.6.1.min.js"> </script>
+  
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+ <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script type="text/javascript" src=" https://raw.github.com/malsup/twitter/master/jquery.twitter.search.js"></script>
+
+   <script src="Facebook.js"></script>
+  
+   <script src=" Tweeter.js"></script>
+  </head>
+  
+  <body>
+
+ <div data-role="page" class="page-map2"> 
+ <div data-role="header"> 
+ <h1>jQuery Mobile</h1> 
+ </div> <div data-role="content"> 
+ <h2></h2> 
+
+<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FUniversidad-Dominicana-OM%2F163263233742403%3Ffref%3Dts&amp;width=1000&amp;height=1000&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=155392544656734" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:350px; height:590px;" allowTransparency="true" align="right" ></iframe>
+ <div id="map2" class="gmap">
+ </div> <script type="text/javascript">
+ var map2, latlng2, options2; function initialize() { latlng2 = new google.maps.LatLng(40.716948, -74.003563); options2 = { zoom: 14, center: latlng2, mapTypeId: google.maps.MapTypeId.ROADMAP }; 
+     map2 = new google.maps.Map(document.getElementById("map2"), options2); } $('.page-map2').live("pagecreate", function() { initialize(); }); $('.page-map2').live('pageshow',function(){ google.maps.event.trigger(map2, 'resize'); map2.setOptions(options2); }); 
+     </script> </div> 
+     </div> 
+ <script type="text/javascript"> $('body').append('<div id="fb-root"></div><div class="fb-like" data-href="http://www.google.se" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>'); $.getScript('http://connect.facebook.net/sv_SE/all.js#xfbml=1', function(){ }); </script> 
+ <div class="fb-comments" data-href="https://www.facebook.com/pages/Universidad-Dominicana-OM/163263233742403" data-width="470"></div>
+ 
+ <fb:comments-count href="https://www.facebook.com/pages/Universidad-Dominicana-OM/163263233742403"/></fb:comments-count>
+ 
+<div id="twetter"></div> 
+    
+  </body>
+</html>

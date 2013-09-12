@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html ng-app>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  
+<style type="text/css">
+
+#notas{
+
+border: grey 2px solid; 
+background:url('http://www.free-power-point-templates.com/wp-content/uploads/2010/01/438_example.jpg');
+}
+
+</style>
+
+
+  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js "></script>
+    
+ 	<script src="prototype.js"></script>
+    
+    <script src="login2.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    
+    <script src="angular.min.js"></script>
+  <!-- Extra Codiqa features -->
+  <link rel="stylesheet" href="codiqa.ext.css">
+  
+  <!-- jQuery and jQuery Mobile -->
+  <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+  
+  <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+  <!-- Extra Codiqa features -->
+  
+  <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
+  
+    <script src="CargarFoto.js"></script>
+
+  <script  src="login2.js"></script>
+  
+   <script  type="text/javascript" src="Calendariojs.js"></script> 
+   
+  <script src="CargarFoto.js"></script>
+  
+    <script src="Fuente.js"></script>
+    
+    <script src="Hora.js">  </script>  
+    
+  <script src="Probar/CrealTabla.js"> </script>
+  
+ <script  src="ValidarLogeo.js"></script>
+ 
+  <script src="ConvertirMayuscula.js"></script>
+  
+  <script>
+  
+  $(document).ready(function(e) {
+	  
+	//  alert("Entra");
+   
+ 
+   $('#notas').html(localStorage.getItem('Notas'));
+    
+});
+
+  
+  
+  </script>
+  
+</head>
+
+<body>
+<!-- Home -->
+<div data-role="page" id="page1">
+
+    <div data-theme="b" data-role="header">
+        <h3>
+           <center><div id="nivel"> </div></center>
+        </h3>
+    </div>
+    <div data-role="content">
+        <div>
+        
+       <center></center>
+       
+       
+<strong><div align="right" style="color:#00F" onClick="" id="cerrarS">Cerrar Sesion</div></strong>
+
+  <strong><div id="recinto" align="left"></div></strong>
+
+<form enctype="multipart/form-data">
+     
+     
+   <img  src="Iconocargar.fw.png" id="imagen" width="160"
+    height="160"></img>
+   
+   <div ng-controller="Mostrar">
+   
+    <img src="icon_user_online.png" width="12" height="12" ></img><strong>{{p}}</strong>
+    
+    <strong><div id="matri" ></div></strong>
+  
+  </div>
+      
+   <strong><div id="carrera">{{carrera}}</div></strong>
+  
+  </div>
+  <div style="display:none;" id="mostrar">
+  
+<input type="file" name="btnU" style="color:#FFF" id="btnU" width="25" height="25"> 
+ </div> 
+
+ 
+   <div  id="direccion" style="display:none;"> </div>
+   
+    <div ng-controller="foto"></div>                      
+
+</form>
+      
+
+        <div id="student"> </div>
+        </div>
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+            </div>
+            <div class="ui-block-b">
+            </div>
+            <div class="ui-block-c">
+            </div>
+            <div class="ui-block-a">
+            </div>
+            <div class="ui-block-b">
+            </div>
+            <div class="ui-block-c">
+            </div>
+        </div>
+        
+<!--  Aqui va las callificaciones       
+       <table border='1'>
+          <td>
+            <tr>
+                  </tr>
+       
+        </td>
+              <table> -->
+
+   <!--  Aqui va el horario -->
+   
+   <strong><div id="notas"></div></strong>
+   
+   <div id="border"></div>
+   
+   
+            <div id='horario'>  </div>
+   
+   <a data-role="button" data-theme="b" href="#page1" data-icon="search"
+       
+       data-iconpos="left" onClick="">
+            Consultar Otro Periodos
+        </a>
+
+     <a data-role="button" data-theme="b" href="#page1" data-icon="check" data-iconpos="left">
+            Solicitar Revision Materia
+        </a>
+     
+     <a data-role="button" data-theme="b" href="Menu.html" data-icon="home" data-iconpos="left"  id="PRincipal">
+            Menu
+        </a> 
+    
+    </div>
+    
+</div>
+</body>
+</html>

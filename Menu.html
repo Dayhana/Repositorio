@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html ng-app>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  
+  
+  
+  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+  
+  <!-- Extra Codiqa features -->
+  <link rel="stylesheet" href="codiqa.ext.css">
+  
+  <!-- jQuery and jQuery Mobile -->
+  <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"> </script>
+    
+
+<script>
+
+
+$(document).ready(function(e) {
+
+$('#mapa').click(function(e) {
+    
+
+
+   if(localStorage.getItem('direccion')=="Av. Independencia #200, Centro de los Heroes"){
+	
+ $('#por').load('pageshow',function(){
+            
+     $('#por').gmap({ 'center':'18.449545,-69.929162', 'zoom':17});
+
+
+       });
+             
+     
+        
+
+
+}
+ });  
+
+ });
+            
+
+          
+  </script>
+
+ <script src="Calendariojs.js"></script> 
+
+
+
+  <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+  
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    
+  <!-- Extra Codiqa features -->
+  <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
+  
+
+  <script  src="login2.js"></script>
+   
+      <script type="text/javascript" src="Recintos.js"></script>
+      
+            <script src="Hora.js"></script>
+
+            <script  type="text/javascript" src="ValidarLogeo.js"></script>
+            <script src="login2.js"> </script>
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyAyAU2pwDi7JOQ2lFl7GDKF6yjwRH9qtr4&sensor=true"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.ui.map.js"></script>            
+            
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="page1">
+
+    <div data-theme="b" data-role="header">
+        <h4>
+            Universidad O&amp;M
+        </h4>
+            <div align="center" id="hora"></div>   
+    </div>
+    <div data-role="content">
+        <div style="">
+            <center><img style="width: 288px; height: 100px" src="http://www.udoym.edu.do/logolemaoym.png"></center>
+        </div>
+          <div id="fecha"  align="left"> </div>     
+          
+        <ul data-role="listview" data-divider-theme="c" data-inset="true">
+        
+            <li data-role="list-divider" role="heading">
+            
+                 <img src="icon_user_online.png" height="18" width="18" style="display:none"></img>
+                 
+                   <div id="n"> </div>  
+            </li>
+             
+               <li data-theme="b">
+              <a  href="Estudiantes.html" data-transition="slidefade">
+                      Perfil
+                </a>
+            </li>
+            
+            <li data-theme="b">
+                <a href="PorRecintos.html" data-transition="slide" id="mapa">
+                    Mapa del Campus
+                </a>
+            </li>
+            <li data-theme="b">
+                <a href="" data-transition="slide">
+                    Noticias
+                </a>
+            </li>
+            <li data-theme="b">
+                <a href="Calendario.html" data-transition="slide">
+                    Calendario
+                </a>
+            </li>
+            <li data-theme="b">
+            
+                <a href="Direcciones.html" data-transition="slide">
+                
+                    Directorio de la Univesidad
+                </a>
+            </li>
+            <li data-theme="b">
+                <a href="" data-transition="slide">
+                    Libreria
+                </a>
+            </li>
+            <li data-theme="b">
+                <a href="" data-transition="slide">
+                    Medio Social
+                </a>
+            </li>
+            <li data-theme="b">
+                <a href="" data-transition="slideup">
+                    Contactos
+                </a>
+            </li>
+            
+            
+        </ul>
+    </div>
+</div>
+</body>
+</html>

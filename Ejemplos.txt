@@ -1,0 +1,27 @@
+ while(odbc_fetch_array($iners)) {
+
+ 
+   echo odbc_result($inner,"ent_nombre");
+ 
+ 
+ 
+}      
+		
+$iners=odbc_exec($connection,$inner);
+
+
+
+/**$sql="select *
+From tbl_co_entidad
+where ent_codigo in(select ent_codigo
+                  from tbl_co_estudiante
+                   where est_matricula='".$matric."')"; 
+
+				   $seg="select* from tbl_co_estudiante where est_matricula='".."' ";
+
+$inner="SELECT* FROM tbl_co_estudiante inner join  ";				   
+
+
+/* $result=odbc_exec($connection,"select tbl_co_estudiante.est_nombres,tbl_co_estudiante.est_apellidos,tbl_co_estudiante.est_matricula,tbl_co_entidad.ent_codigo tbl_co_estudiante.est_codigo,tbl_co_entidad.ent_nombre from
+ tbl_co_estudiante,tbl_co_entidad where tbl_co_estudiante.est_matricula='".$matri."' and  tbl_co_estudiante.est_codigo=tbl_co_entidad.ent_codigo;");
+*/

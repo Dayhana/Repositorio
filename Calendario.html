@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html ng-app>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  <title></title>
+  
+  
+  
+  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+  
+  <!-- Extra Codiqa features -->
+  <link rel="stylesheet" href="codiqa.ext.css">
+  
+  <!-- jQuery and jQuery Mobile -->
+  <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+  <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  <script src="angular.min.js"></script>
+  
+  <script src="login1.js"></script>
+
+  <!-- Extra Codiqa features -->
+  <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"> 
+  </script>
+  
+ <script src="Calendariojs.js"></script> 
+ 
+  <script src="ConvertirMayuscula.js"></script>
+  
+  <script src="login1.js">
+  
+
+  
+</script>
+
+
+
+ <script>
+
+
+	 
+	//alert(document.getElementById('enero').childNodes[0].nodeName);
+	 
+
+
+//alert(document.getElementById('febrero').childNodes[0].nodeName);
+
+
+//alert(document.getElementById('marzo').childNodes[0]);
+	
+//alert(document.getElementById('febrero').childNodes[0].nodeName); 
+	  
+	//alert($('febrero').text());
+
+//var s=document.getElementById('feb').text='02';
+
+//var p=m[1];
+//if(m=='01'){
+
+//http://www.comocreartuweb.com/consultas/showthread.php/56560-Obtener-valor-de-propiedad-quot-rel-quot-de-un-div
+	
+	//alert(m);
+	//}else{
+		
+		//alert("imprime");
+		
+//var a=p.getElementsByTagName('especial');
+
+//var s=document.getElementById('feb').value=2;
+
+
+
+// if(document.getElementById('most')){
+	 
+   //alert(m);	 
+	 
+	 //}else if(document.getElementById('feb')){
+		 
+		 //alert(s); 
+	   	 
+		 //}
+
+//http://mundogeek.net/archivos/2004/08/19/javascript-accediendo-a-los-elementos-del-arbol-de-documento/
+
+//}
+
+</script>
+
+<script src="angular.min.js"></script>
+</head>
+
+<body>
+ 
+<!-- Home -->
+
+<div data-role="page" id="page1">
+
+<div data-theme="b" data-role="header">
+
+        <h4>
+            O&amp;M@s
+        </h4>
+    </div>
+    <div data-role="content">
+        <div style=" text-align:center">
+   <img style="width: 288px; height: 100px" src="http://www.udoym.edu.do/logolemaoym.png">
+        </div>
+ 
+<div data-role="collapsible-set">
+  
+<div data-role="collapsible" id="enero" onClick="Enero()">		
+
+<h3 onClick="Enero()">Enero</h3>
+
+       
+ <div id="en"></div>  
+ 
+  </div>	
+    
+<div data-role="collapsible" id="enero" onClick="Febrero()">		
+
+<h3 onClick="Febrero()">Febrero</h3>
+
+       
+ <div id="feb"></div>
+ 
+  </div>	
+ 
+
+ <div data-role="collapsible" id="marzo" onClick="Marzo()">
+   
+    <h3 onClick="Marzo()">Marzo</h3>
+    
+    
+      <div id="mar"></div>
+  
+  </div>	
+
+ 
+ <div data-role="collapsible" id="abril">
+ 
+    <h3 onClick="Abril()">Abril</h3>
+    
+    
+       <div id="ab"></div> 
+   
+    
+
+  </div>
+
+  
+   <div data-role="collapsible">
+   
+    <h3 onClick="Mayo()">Mayo</h3>
+   
+       <div id="may">
+ 
+  			 
+ 
+       </div> 
+   
+    
+  </div>
+  
+  
+   <div data-role="collapsible">
+   
+    <h3 onClick="Junio()">Junio</h3>
+    
+       <div id="ju">
+ 
+ 
+ 
+       </div> 
+   
+    
+  </div>
+  
+ 
+   <div data-role="collapsible">
+   
+    <h3 onClick="Julio()">Julio</h3>
+    
+       <div id="jul">
+ 
+  
+ 
+       </div> 
+   
+    
+  </div>
+  
+  
+ 
+   <div data-role="collapsible">
+   
+    <h3 onClick="Agosto()">Agosto</h3>
+  
+       <div id="ag">
+ 
+  
+ 
+       </div> 
+   
+    
+  </div> 
+  
+  
+  
+   <div data-role="collapsible">
+   
+    <h3 onClick="Septiembre()">Septiembre</h3>
+  
+       <div id="sep">
+ 
+   
+ 
+       </div> 
+   
+    
+  </div>
+	 
+	 
+   <div data-role="collapsible">
+    
+ <h3 onClick="Octubre()">Octubre</h3>
+   
+       <div  id="oc">
+ 
+
+ 
+       </div> 
+   
+    
+  </div>
+
+   <div data-role="collapsible">
+   
+    <h3 onClick="Noviembre()">Noviembre</h3>
+ 
+       <div id="nov">
+ 
+
+       </div> 
+   
+    
+  </div>
+
+  
+   <div data-role="collapsible">
+   
+    <h3 onClick="Diciembre()">Diciembre</h3>
+    
+       <div id="dic">
+ 
+  
+ 
+       </div> 
+   
+    
+  </div>
+  
+	</div>
+	   
+ </div>
+		
+<a data-role="button" data-theme="b" href="index.html" data-icon="home" data-iconpos="left">
+            Principal
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

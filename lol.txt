@@ -1,0 +1,59 @@
+function initializeRecinto(){
+  
+ 
+     
+	var matri=sessionStorage.direccion='Av. Independencia ';
+
+ $.getJSON('mapa.php',{rec:matri},function(json){
+  
+   // var str=parseFloat (json);
+    
+    alert(json);
+	
+ 
+	
+	
+	
+  //alert(json.latitud);
+  
+  //alert(sessionStorage.latitud=json.latitud);
+  
+  
+   
+          
+
+	
+         var ima='icono_correcto.png';
+		 
+		 var latitud= new google.maps.LatLng(18.449545,-69.929162);
+        
+   		var mapOptions = {
+        
+          center: latitud,
+		  
+          zoom: 18,
+          
+          mapTypeId: google.maps.MapTypeId.ROADMAD
+          
+         };
+        
+		
+		var map = new google.maps.Map(document.getElementById("recintos"),
+            mapOptions);
+
+			
+        var mar = new google.maps.Marker({
+       
+	     
+         tittle: 'Universidad Dominicana O&M',
+         position: latitud,
+		 icon:ima
+	   
+	   });
+      
+			mar.setMap(map);
+			
+			
+		});	
+	
+}

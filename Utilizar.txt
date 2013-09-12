@@ -1,0 +1,139 @@
+10-mist-7-010Es la clave563
+
+
+
+
+
+
+
+
+
+
+$conect=mysql_connect('localhost','root','1234');
+
+  
+      $selecdb=mysql_select_db('estudiantes',$conect);
+	  
+	  
+	  //$select="select matricula from  students";
+
+     //if(){
+		 
+		 
+		 
+		// }
+
+
+       $sql2=mysql_query("select* from students where matricula='".$matri."'");
+
+   	        	
+			
+	 while($row = mysql_fetch_array($sql2)) { 
+	 
+	
+  
+        if(strtolower($matri)!=strtolower($row['matricula'])){
+			
+	         	$ins=false;
+				
+				$consulta=mysql_query("INSERT INTO students(matricula,clave) VALUES('".$matri."','".$pass."');",$conect);
+		         
+				//echo "Existe la matricula en la base de datos";	
+	     	
+	     }
+
+		 else {
+			 
+         	 $ins=true;
+			 
+			 // echo "se inserto";
+			  echo "Existe la matricula en la base de datos";	
+	     	
+			  //  $consulta=mysql_query("INSERT INTO students(matricula,clave) VALUES('".$matri."','".$pass."');",$conect);
+		         
+		
+		
+		 }
+			
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$consulta=mysql_query("INSERT INTO students(matricula,clave) VALUES('".$matri."','".$pass."');",$conect);
+   
+   
+  
+ if($consulta){
+	 
+	 
+	 echo "si";
+	 
+	 }else{
+		 
+	 echo "no";	 
+		 }
+	  
+/**
+ if($insert==true){
+		
+	
+	  $consulta=mysql_query("INSERT INTO students (matricula,clave) VALUES('".$matri."','".$pass."');",$conect);
+	   
+        echo "Se insertaron los datos";
+	
+	
+	   
+
+        }else 
+		
+		if($insert==false){
+			
+			
+	             echo "Esta matricula se encuentra en la base de datos!";
+		
+
+			}
+
+		
+
+
+	           }

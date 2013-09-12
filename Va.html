@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html ng-app>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  
+  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+  
+  <!-- Extra Codiqa features -->
+  <link rel="stylesheet" href="../codiqa.ext.css">
+  
+  <!-- jQuery and jQuery Mobile -->
+  
+  <!--  https://raw.github.com/srobbin/jquery-backstretch/master/jquery.backstretch.min.js-->
+  <script src="http://brianjaeger.com/docs/limitkeypress/jquery.limitkeypress.min.js"></script>
+  <script src="http://brianjaeger.com/docs/limitkeypress/jquery.limitkeypress.js"></script>
+  <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+  <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+  
+    <script src="../angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  <script src="../ajax1.js" language="javascript">
+  
+  </script>
+    <script src="../ValidarPass.js"> </script>
+    
+    <script  src="../login1.js"></script>
+    
+    <script src="../Click.js"></script>
+    
+    
+    <script src="CambiarPass.js">
+
+    </script>
+    
+</head>
+<body>
+<script>
+
+</script>
+
+
+
+<!-- Home -->
+<!-- http://librosweb.es/ajax/capitulo_7/la_primera_aplicacion.html -->
+
+<div data-role="page" id="page1">
+    <div data-theme="b" data-role="header">
+        <h4>
+        <center><strong>Cambiar Contraseña</strong></center>
+           
+       </h4>
+    </div>
+    <div data-role="content">
+        <div style="">
+           <center><img style="width: 288px; height: 100px" src="http://www.udoym.edu.do/logolemaoym.png" id="ima"></center>
+        
+        </div>
+       
+ <div align="right" onClick="ShowDialog()" style="display:none;">Registrar Cuenta</div>
+
+
+ <br><div>Si no tienes tu cuenta electronica, solicitala ya!
+  
+ </div></br>
+ 
+
+ <form name="formPass"> 
+
+
+
+   <div data-role="fieldcontain">
+        
+            <label for="textinput3" id="ls">
+            
+              Digite su  Correo
+                
+            </label>
+            
+          <input name="mail"  type="email"  id="mail"placeholder="@Correo" required title="Correo">
+        </div>
+      
+      
+      
+      
+      
+      
+
+        <div data-role="fieldcontain">
+        
+            <label for="textinput3" id="ls">
+            
+                  Digite su Matricula
+                
+            </label>
+            
+          <input name="mat"  type="text"  id="mat"placeholder="Matricula" required maxlength="13">
+        </div>
+        
+ 
+   <div data-role="fieldcontain">
+        
+            <label for="textinput3" id="ls">
+            
+                  Digite su Cedula
+                
+            </label>
+            
+          <input name="ced"  type="text"  id="ced"placeholder="Ejem: 001-4562198-1" required maxlength="13">
+        </div>
+        
+ 
+   
+        
+     <img src="../ajax-loader.gif"  id="magen" style="display:none;" width="50"></img>  
+             
+         <a data-role="button" data-theme="b" data-icon="check" href="" name="btnS" type="button"  id="btnS" onClick="Cargar()">
+          Enviar
+        </a>
+        
+</form>
+        
+       
+
+
+
+
+</body>
+
+</html>

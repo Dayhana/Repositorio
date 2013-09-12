@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html ng-app>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  
+  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+  
+  <!-- Extra Codiqa features -->
+  <link rel="stylesheet" href="codiqa.ext.css">
+  
+  <!-- jQuery and jQuery Mobile -->
+  
+  <!--  https://raw.github.com/srobbin/jquery-backstretch/master/jquery.backstretch.min.js-->
+  <script src="http://brianjaeger.com/docs/limitkeypress/jquery.limitkeypress.min.js"></script>
+  
+  <script src="http://brianjaeger.com/docs/limitkeypress/jquery.limitkeypress.js"></script>
+   
+   <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+   
+   <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+  
+    <script src="angular.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    
+  <script src="ajax1.js" language="javascript">
+  
+  </script>
+    <script src="ValidarPass.js"> </script>
+    
+    <script  src="login1.js"></script>
+    
+    <script src="Click.js"></script>
+    
+    
+    <script src="Javascript/CambiarPass.js">
+
+    </script>
+    
+</head>
+<body>
+<script>
+
+</script>
+
+
+
+<!-- Home -->
+<!-- http://librosweb.es/ajax/capitulo_7/la_primera_aplicacion.html -->
+
+<div data-role="page" id="page1">
+    <div data-theme="b" data-role="header">
+        <h4>
+        <center><strong>Cambiar Contraseña</strong></center>
+           
+       </h4>
+    </div>
+    <div data-role="content">
+        <div style="">
+           <center><img style="width: 288px; height: 100px" src="http://www.udoym.edu.do/logolemaoym.png" id="ima"></center>
+        
+        </div>
+
+ <br><div>
+  
+       
+ <div align="right" onClick="ShowDialog()" style="display:none;">Registrar Cuenta</div>
+
+ </div></br>
+ 
+
+ <form name="formPass"> 
+
+
+
+   <div data-role="fieldcontain">
+        
+            <label for="textinput3" id="ls">
+            
+              Digite Su Matricula
+                
+            </label>
+            
+          <input name="matri"  type="text"  id="matri"placeholder="Matricula" maxlength="13" >
+        </div>
+      
+   
+
+        <div data-role="fieldcontain">
+        
+            <label for="textinput3" id="ls">
+            
+                  Digite Su codigo
+                
+            </label>
+            
+<input name="codg"  type="text"  id="codg" placeholder="Codigo" required title="Digite el codigo enviado por correo">
+       
+        </div><div id="prob"> </div><img src="ajax-loader2.gif" style="display:none;" id="car"></img>
+        
+ 
+   <div data-role="fieldcontain">
+        
+            <label for="textinput3" id="ls">
+            
+                  Digite Su Nueva Clave
+                
+            </label>
+            
+          <input name="contra"  type="password"  id="contra"placeholder="*Nueva Clave" required maxlength="4">
+        </div>
+        
+ 
+   <div data-role="fieldcontain">
+        
+            <label for="textinput3" id="ls">
+            
+                  Repita Su Nueva Clave
+                
+            </label>
+            
+          <input name="contra1"  type="password"  id="contra1"placeholder="*Nueva Clave" maxlength="4">
+        </div>
+        
+        
+
+             
+             
+ <a data-role="button" data-theme="b" data-icon="check" href="" name="btnE" type="button"  id="btnE" onClick="">
+          Enviar
+        </a>
+        
+</form>
+        
+       
+
+
+
+
+</body>
+
+</html>

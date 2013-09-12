@@ -1,0 +1,114 @@
+﻿<html ng-app>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  
+  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+  
+  <!-- Extra Codiqa features -->
+  <link rel="stylesheet" href="codiqa.ext.css">
+  
+  <!-- jQuery and jQuery Mobile -->
+  <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+  <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+  
+    <script src="angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  <script>
+      //
+  </script>
+
+    <script  src="login1.js"></script>>
+</head>
+
+
+<script>
+
+function Enviar(){
+	
+      
+    $.getJSON('DosT.php',{matri: '09-mist-1-008'}, function(json){
+ 
+              alert(json.recinto);   
+               alert(json.direccion);         
+           
+           //alert(json[1]);
+              //  alert(json['recinto']);
+                //  alert(json);
+        //$.each(json.recinto, function(i,item){
+ 
+           //  alert (item.recintos);            
+            
+            
+           alert( $("#cargar").html(json.recinto));
+        //});
+    });       
+    
+    
+      
+   
+         }
+       
+       
+       
+       
+</script>
+
+
+<body onload="Enviar()">
+<!-- Home -->
+<!-- http://librosweb.es/ajax/capitulo_7/la_primera_aplicacion.html -->
+
+<div data-role="page" id="page1">
+    <div data-theme="b" data-role="header">
+        <h4>
+            O&amp;M@s
+            <div ng-controller="Hora">
+            
+             {{hora}}{{pm}}
+              
+            </div>
+       </h4>
+    </div>
+    <div data-role="content">
+        <div style="">
+          
+        
+        </div>
+        
+	     <div ng-controller="Hora" align="right">
+          {{al}}
+          
+         <div id="cargar"> 
+		  
+	      aqui!!	 
+		 </div>
+          
+		  
+		  </div>
+    
+		
+        </div>
+         <!--<input  name="boton" type="submit" data-theme="b" data-icon="star" data-iconpos="left"
+        
+        value="Aceptar" id="boton" >-->
+        
+        
+       <!--  <input  name="btnLogin" type="button"  id="btnLogin" onClick="Login()">-->
+       
+
+    </div>
+
+</div>
+
+
+
+
+
+</body>
+
+</html>
